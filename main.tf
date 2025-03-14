@@ -62,8 +62,8 @@ resource "aws_security_group" "jenkins_sg" {
 
 
 resource "aws_instance" "jenkins" {
-  ami                    = "ami-016038ae9cc8d9f51"      # Amazon Linux 2 (latest for us-east-1)
-  instance_type          = "t3.micro"                   # or whatever type you want
+  ami                    = "ami-016038ae9cc8d9f51"      # Amazon Linux 2
+  instance_type          = "t3.medium"                   # or whatever type you want
   key_name               = "webapp1key"                 # this is an already existing key on my aws account
   
   instance_initiated_shutdown_behavior = "terminate"
