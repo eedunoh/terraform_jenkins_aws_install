@@ -31,7 +31,7 @@ services:
       - DOCKER_CERT_PATH=/certs/client    # Path to the TLS certs so Jenkins can securely connect to the Docker daemon
       - DOCKER_TLS_VERIFY=1               # Enforce TLS verification when Jenkins talks to Docker daemon
     volumes:
-      - /Users/edunoh/jenkins_install:/var/jenkins_home    # Mount persistent Jenkins home directory to preserve data (jobs, configs, etc.)
+      - /home/ec2-user/jenkins_install:/var/jenkins_home    # Mount persistent Jenkins home directory to preserve data (jobs, configs, etc.)
       - jenkins-docker-certs:/certs/client:ro  # Mount the certs directory (read-only) so Jenkins can authenticate to Docker
     ports:
       - "8080:8080"               # Expose Jenkins UI on port 8080 (web interface)

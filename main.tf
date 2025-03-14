@@ -89,14 +89,6 @@ resource "aws_s3_bucket" "terraform_state" {
   bucket = "blog-app-remote-state-bucket-fyi"
 }
 
-# terraform {
-#   backend "s3" {
-#     bucket = "blog-app-remote-state-bucket-fyi"
-#     key    = "devops-project-1/jenkins/terraform.tfstate"
-#     region = "eu-north-1"
-#   }
-# }
-
 
 output "jenkins_url" {
   description = "Jenkins URL"
