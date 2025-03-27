@@ -86,7 +86,7 @@ resource "aws_instance" "jenkins" {
 
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "blog-app-remote-state-bucket-fyi"
+  bucket = "app-remote-state-bucket-fyi"
 }
 
 
