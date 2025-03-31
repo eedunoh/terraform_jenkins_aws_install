@@ -31,8 +31,8 @@ resource "aws_iam_policy" "jenkins_policy" {
           "s3:ListBucket"
         ]
         Resource = [
-          "arn:aws:s3:::blog-app-remote-state-bucket-fyi",
-          "arn:aws:s3:::blog-app-remote-state-bucket-fyi/*"
+          "arn:aws:s3:::app-remote-state-bucket-fyi",
+          "arn:aws:s3:::app-remote-state-bucket-fyi/*"
         ]
       }
     ]

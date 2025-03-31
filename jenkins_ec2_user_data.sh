@@ -50,7 +50,7 @@ git clone https://github.com/eedunoh/terraform_jenkins_aws_install.git
 cd /home/ec2-user/terraform_jenkins_aws_install/dockerfiles
 
 
-# Change ownership for Jenkins volume directory (this assumes the folder exists already)
+# Change ownership for Jenkins volume directory
 sudo mkdir -p /home/ec2-user/jenkins_install
 sudo chown -R 1000:1000 /home/ec2-user/jenkins_install
 
