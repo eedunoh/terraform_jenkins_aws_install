@@ -15,7 +15,9 @@ A Git repository containing the infrastructure code, configuration files, and au
 - **jenkins_iam_role_and_policy.tf**: Defines the IAM role and policies for Jenkins to interact with other AWS services securely (e.g., EC2 accessing S3 to store Terraform state files).
   
 - **main.tf**: The main Terraform configuration file, used for provisioning AWS infrastructure:
-  - EC2 instance that will host Jenkins
-  - S3 for remote backend
+  - default VPC
+  - EC2 instance to host Jenkins
+  - Security group for Jenkins
+  - S3 remote backend for storing Terraform state files
  
 - [Terraform-AWS resources configuration Guide](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
